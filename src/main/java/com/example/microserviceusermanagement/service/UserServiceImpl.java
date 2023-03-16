@@ -3,7 +3,7 @@ package com.example.microserviceusermanagement.service;
 import com.example.microserviceusermanagement.model.User;
 import com.example.microserviceusermanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.password.PasswordEncoder;
+//import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -26,7 +26,7 @@ public class UserServiceImpl implements UserService{
 
     @Override
     public User findByUsername(String username){
-      return userRepository.findByUsername(username).orElse(null);
+        return userRepository.findByUsername(username).orElse(null);
     }
 
     @Override
