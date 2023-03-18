@@ -15,8 +15,8 @@ public class UserServiceImpl implements UserService{
     private UserRepository userRepository;
 
     // We will create bean for iot
-   /* @Autowired
-    private PasswordEncoder passwordEncoder;*/
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public User save(User user){
