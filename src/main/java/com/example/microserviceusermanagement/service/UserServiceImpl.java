@@ -3,7 +3,7 @@ package com.example.microserviceusermanagement.service;
 import com.example.microserviceusermanagement.model.User;
 import com.example.microserviceusermanagement.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -15,8 +15,8 @@ public class UserServiceImpl implements UserService{
     private UserRepository userRepository;
 
     // We will create bean for iot
-   /* @Autowired
-    private PasswordEncoder passwordEncoder;*/
+    @Autowired
+    private PasswordEncoder passwordEncoder;
 
     @Override
     public User save(User user){
